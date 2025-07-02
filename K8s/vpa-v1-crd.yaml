@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   name: verticalpodautoscalers.autoscaling.k8s.io
   annotations:
-    api-approved.kubernetes.io: "https://github.com/kubernetes/enhancements/pull/1111"
+    api-approved.kubernetes.io: "https://github.com/kubernetes/enhancements/pull/1219"
 spec:
   group: autoscaling.k8s.io
   names:
@@ -13,7 +13,7 @@ spec:
     singular: verticalpodautoscaler
   scope: Namespaced
   versions:
-    - name: v1
+    - name: v1beta2
       served: true
       storage: true
       schema:
@@ -31,7 +31,7 @@ kind: CustomResourceDefinition
 metadata:
   name: verticalpodautoscalercheckpoints.autoscaling.k8s.io
   annotations:
-    api-approved.kubernetes.io: "https://github.com/kubernetes/enhancements/pull/1111"
+    api-approved.kubernetes.io: "https://github.com/kubernetes/enhancements/pull/1219"
 spec:
   group: autoscaling.k8s.io
   names:
@@ -41,7 +41,7 @@ spec:
     singular: verticalpodautoscalercheckpoint
   scope: Namespaced
   versions:
-    - name: v1
+    - name: v1beta2
       served: true
       storage: true
       schema:
