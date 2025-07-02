@@ -13,13 +13,15 @@ spec:
     singular: verticalpodautoscaler
   scope: Namespaced
   versions:
-    - name: v1beta2
+    - name: v1
       served: true
       storage: true
       schema:
         openAPIV3Schema:
           type: object
           properties:
+            metadata:
+              type: object
             spec:
               type: object
             status:
@@ -41,13 +43,15 @@ spec:
     singular: verticalpodautoscalercheckpoint
   scope: Namespaced
   versions:
-    - name: v1beta2
+    - name: v1
       served: true
       storage: true
       schema:
         openAPIV3Schema:
           type: object
           properties:
+            metadata:
+              type: object
             spec:
               type: object
             status:
